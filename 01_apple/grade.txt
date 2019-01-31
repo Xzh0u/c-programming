@@ -1,5 +1,8 @@
-Grading at Thu Jan 31 13:28:47 UTC 2019
-Line_1_did_not_match
-Your file did not match the expected ouput
+Grading at Thu Jan 31 13:42:12 UTC 2019
+I expected to find a file called 'fruit.txt' but it did not exist
+(or was not a regular file)
+Here are the files that I can find:
+grade.txt
+README
 
 Overall Grade: FAILED
