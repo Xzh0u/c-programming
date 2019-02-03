@@ -42,11 +42,3 @@ void squares(int size1, int x_offset, int y_offset, int size2) {
     //print a newline
 
 }
-int main(void)
-{
-  int size1, x_offset, y_offset, size2;
-  scanf("%d%d%d%d", &size1, &x_offset, &y_offset, &size2);
-  squares(size1,x_offset,y_offset,size2);
-
-  return 0;
-}
