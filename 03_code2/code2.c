@@ -6,9 +6,9 @@ int printTriangle(int size) {
 
     for (int j = 0; j <= i; j++) {    //count from 0 (inclusive) to i (inclusive), for each number j that you count
 
-      putchar('a');     //print a "*"
+      putchar('*');     //print a "*"
 
-     ++starCount; //increment starCount
+     starCount++; //increment starCount
 
     }  //when you finish counting on j, 
 
