@@ -1,0 +1,13 @@
+Grading at Sun Feb  3 09:16:23 UTC 2019
+Trying to compile your code and link with squares_test.o
+squares.c: In function ‘squares’:
+squares.c:17:22: error: comparisons like ‘X<=Y<=Z’ do not have their mathematical meaning [-Werror=parentheses]
+       if (((x_offset <= x < x_offset + size2) && (y == y_offset || y == y_offset + size2 - 1))||((y_offset <= y < y_offset + size2)&&( x ==x_offset || x == x_offset + size2 - 1)))
+                      ^
+squares.c:17:108: error: comparisons like ‘X<=Y<=Z’ do not have their mathematical meaning [-Werror=parentheses]
+       if (((x_offset <= x < x_offset + size2) && (y == y_offset || y == y_offset + size2 - 1))||((y_offset <= y < y_offset + size2)&&( x ==x_offset || x == x_offset + size2 - 1)))
+                                                                                                            ^
+cc1: all warnings being treated as errors
+Could not compile your code
+
+Overall Grade: FAILED
