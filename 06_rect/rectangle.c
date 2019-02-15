@@ -27,12 +27,12 @@ rectangle canonicalize(rectangle r) {
   //WRITE THIS FUNCTION
   if (r.width < 0) {
     r.width = -r.width;
-    r.x -= r.width;
+    r.x += r.width;
   }
   
   if (r.height < 0) {
     r.height = -r.height;
-    r.y -= r.height;
+    r.y += r.height;
   }
   return r;
 }
@@ -48,8 +48,9 @@ rectangle intersection(rectangle r1, rectangle r2) {
   r.width = min(r1.x + r1.width, r2.x + r2.width) - r.x;
   r.height = min(r1.y + r1.height, r2.y + r2.height) - r.y;
 
-  if (r.width < 0 || r.height < 0) {
-    r.width = r.height = 0;
+  if (((r1.x + r1.width < r2.x) || (r2.x + r2.width < r1.x))
+      || ((r1.y + r1.height < r2.y) || (r2.y + r2.height < r1.y))) {
+    r.width = r.height = r.x = r.y = 0;
   }
   return r1;
 }
