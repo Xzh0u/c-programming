@@ -54,7 +54,7 @@ rectangle intersection(rectangle r1, rectangle r2) {
       || ((r1.y + r1.height < r2.y) || (r2.y + r2.height < r1.y))) {
     r.width = r.height = r.x = r.y = 0;
   }
-  return r1;
+  return r;
 }
 
 //You should not need to modify any code below this line
