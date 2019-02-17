@@ -1,15 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct _retire_info {
+struct _retire_info{
   int months;
   double contribution;
   double rate_of_return;
-}retire_info;
+};
+typedef struct _retire_info retire_info;
 
 void retirement (int startAge, double initial, retire_info working, retire_info retired) {
   int i;  
-for(i = 0; i < working.months; i++){    
+  for(i = 0; i < working.months; i++){    
   printf("Age %3d month %2d you have $%.2lf\n", startAge / 12 , startAge % 12, initial);    
   initial += (initial * working.rate_of_return) + working.contribution;    
   startAge++;    
