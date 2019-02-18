@@ -22,4 +22,11 @@ nihao ya111
 abc abc
 000 1000000
 cadsjlv d
-
+1 1
+123 123
+bbbbbb bbb
+0x334 0x334
+0x000 0x001
+0x001 0x000
+****a *bbbb
+#4567 $45655
